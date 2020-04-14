@@ -32,7 +32,7 @@ class Home extends Component {
   };
   getAllBook = async () => {
     await this.props.dispatch(getAllBook(this.state.pageNumber));
-    console.log("data", this.props.data.book.bookData.data);
+    // console.log("data", this.props.data.book.bookData.data);
 
     this.setState({
       library: this.props.data.book.bookData.data
@@ -62,7 +62,7 @@ class Home extends Component {
       });
       this.props.dispatch(getAllBook(pageNumberState));
     }
-    console.log("page", this.state.pageNumber);
+    // console.log("page", this.state.pageNumber);
   };
   render() {
     const Title = "Home";

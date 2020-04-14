@@ -16,13 +16,13 @@ class App extends Component {
         <Provider store={store}>
           <Router>
             <Switch>
-              <Route path="/" exact render={props => <Main {...props} />} />
-              <Route path="/login" render={props => <Login {...props} />} />
+              <Route path="/" exact render={(props) => <Main {...props} />} />
+              <Route path="/login" render={(props) => <Login {...props} />} />
               <Route
                 path="/register"
-                render={props => <Register {...props} />}
+                render={(props) => <Register {...props} />}
               />
-              <Route path="/home" render={props => <Home {...props} />} />
+              <Route path="/home" render={(props) => <Home {...props} />} />
               <Route path={"/books/:id"} component={BookDetails} />
             </Switch>
           </Router>

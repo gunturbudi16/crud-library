@@ -20,7 +20,7 @@ class LoginForm extends React.Component {
   };
 
   render() {
-    console.log("haloo" + this.props);
+    // console.log("haloo" + this.props);
     return (
       <div>
         <section className="right-section">
